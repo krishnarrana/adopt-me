@@ -4,9 +4,11 @@
   "description": "React workshop 2019",
   "main": "src/App.js",
   "scripts": {
+    "clear-build-cache": "rm -rf .cache/ dist/",
+    "dev": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/index.html"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
     "prettier": "^1.16.1"
   },
   "dependencies": {
+    "petfinder-client": "^2.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   }
